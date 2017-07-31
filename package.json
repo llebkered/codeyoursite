@@ -18,9 +18,10 @@
   "homepage": "https://github.com/llebkered/codeyoursite#readme",
   "dependencies": {
     "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-csso": "^3.0.0",
     "gulp-sass": "^3.1.0",
-    "vinyl-fs": "^2.4.4"
+    "gulp-watch": "^4.3.11"
   }
 }

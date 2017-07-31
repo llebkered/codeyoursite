@@ -5,9 +5,9 @@ var watch = require('gulp-watch');
 //var browserSync = require('browser-sync').create();
 
 // CSS
-var sass = require('gulp-sass');
-// var autoprefixer = require('gulp-autoprefixer');
-//var csso = require('gulp-csso');
+var sass = require('gulp-sass'); 
+var autoprefixer = require('gulp-autoprefixer');
+var csso = require('gulp-csso');
 
 
 // Browser Sync
