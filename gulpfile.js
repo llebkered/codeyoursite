@@ -2,13 +2,11 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var watch = require('gulp-watch');
-//var browserSync = require('browser-sync').create();
 
 // CSS
-var sass = require('gulp-sass'); 
+var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
-
 
 // Browser Sync
 var browserSync = require('browser-sync').create();
@@ -17,19 +15,19 @@ var browserSync = require('browser-sync').create();
 /* CSS Files */
 
 // Compile SASS and Autoprefix.
-gulp.task('sass', function() {
-  gulp.src('assets/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sass({
-      outputStyle: 'expanded'
-    }))
-    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
-      cascade: true
-    }))
-    // Minify CSS
-    //.pipe(csso())
-    .pipe(gulp.dest('assets/css'))
-    .pipe(browserSync.stream());
+gulp.task('sass', function () {
+    gulp.src('sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+            cascade: true
+        }))
+        // Minify CSS
+        //.pipe(csso())
+        .pipe(gulp.dest('css'))
+        .pipe(browserSync.stream());
 });
 
 
@@ -45,7 +43,7 @@ gulp.task('browser-sync', function() {
 });
 */
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
             baseDir: "./"
@@ -57,10 +55,10 @@ gulp.task('browser-sync', function() {
 /* ================= */
 /* Gulp Watch */
 
-gulp.task('watch', function() {
-  // watch scss files
-  gulp.watch('assets/sass/**/*.scss', ['sass']);
-
+gulp.task('watch', function () {
+    // watch scss files
+    gulp.watch('sass/**/*.scss', ['sass']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 
@@ -68,4 +66,4 @@ gulp.task('watch', function() {
   // place code for your default task here
 });
 */
-gulp.task('default', ['sass', 'browser-sync','watch']);
+gulp.task('default', ['sass', 'browser-sync', 'watch']);
