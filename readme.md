@@ -2,7 +2,7 @@
 
 This repository contains the files used for a __Code Your Own Website__ workshop
 
-V 0.0.1
+V 0.0.2
 
 ## Getting Started
 
@@ -30,5 +30,6 @@ Linear Template is licensed under Creative Commons 3.0 (https://templated.co/lic
 
 ## Acknowledgments
 
+* HTML5 Boilerplate (https://html5boilerplate.com/)
 * Linear by Templated.co (https://templated.co/linear)
 
