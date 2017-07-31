@@ -1,0 +1,26 @@
+{
+  "name": "codeyoursite",
+  "version": "1.0.0",
+  "description": "This repository contains the files used for a __Code Your Own Website__ workshop",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llebkered/codeyoursite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llebkered/codeyoursite/issues"
+  },
+  "homepage": "https://github.com/llebkered/codeyoursite#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "vinyl-fs": "^2.4.4"
+  }
+}
