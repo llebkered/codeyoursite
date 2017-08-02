@@ -25,7 +25,7 @@ gulp.task('sass', function () {
             cascade: true
         }))
         // Minify CSS
-        //.pipe(csso())
+        .pipe(csso())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 });
