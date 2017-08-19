@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>My Site</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,38 +15,91 @@
         div {
             border: 1px #cccccc solid;
         }
+
+        .page {
+            background-color: gray;
+            background-image: url('img/bg-body.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 500px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+        }
+
+        .topnav {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .topnav-menu {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .topnav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        .topnav-item {
+            display: inline-block;
+            text-transform: uppercase;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .topnav-item:last-child {
+            border: none;
+        }
+
+        .header {
+            color: white;
+        }
+
+        .main {
+            background-color: white;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
-<body>
+<body class="page">
 
-    <nav>
-        <div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+    <nav class="topnav">
+        <div class="container">
+            <ul class="topnav-menu">
+                <li class="topnav-item"><a href="#">Home</a></li>
+                <li class="topnav-item"><a href="#">About</a></li>
+                <li class="topnav-item"><a href="#">Services</a></li>
+                <li class="topnav-item"><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header>
-        <div>
+    <header class="header">
+        <div class="container">
             <h1>Heading</h1>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
     </header>
 
-    <main>
-        <div>
+    <main class="main">
+        <div class="container">
             <!-- main top -->
             <div>
                 <h2>Heading 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Odio facilis consequuntur quis, molestiae sit voluptates blanditiis 
-                    natus eos quod dolor in aliquam quae fugit, rem repudiandae perferendis 
-                    ratione quidem numquam!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio facilis consequuntur quis, molestiae sit voluptates
+                    blanditiis natus eos quod dolor in aliquam quae fugit, rem repudiandae perferendis ratione quidem numquam!</p>
                 <p></p>
             </div>
 
@@ -63,36 +116,36 @@
 
             <!-- main bottom -->
             <div>
-               <!-- half -->
-               <div>
-                   <img src="" alt="">
-                   <h2>Header</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
-               </div>
-               <!-- half -->
-               <div>
-                   <img src="" alt="">
-                   <h2>Header</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
-               </div>
                 <!-- half -->
-               <div>
-                   <img src="" alt="">
-                   <h2>Header</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
-               </div>
-               <!-- half -->
-               <div>
-                   <img src="" alt="">
-                   <h2>Header</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
-               </div>                                               
+                <div>
+                    <img src="" alt="">
+                    <h2>Header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
+                </div>
+                <!-- half -->
+                <div>
+                    <img src="" alt="">
+                    <h2>Header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
+                </div>
+                <!-- half -->
+                <div>
+                    <img src="" alt="">
+                    <h2>Header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
+                </div>
+                <!-- half -->
+                <div>
+                    <img src="" alt="">
+                    <h2>Header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum?</p>
+                </div>
             </div>
 
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <!-- footer top -->
         <div>
             <h3>Get in touch.</h3>
