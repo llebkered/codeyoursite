@@ -1,3 +1,18 @@
 .main {
     background-color: white;
+
+    &-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: $breakpoint-small) {
+    .main {
+       // background-color: yellow;
+    }
+    .half {
+        width: 49%;
+    }
 }
