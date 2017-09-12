@@ -2,10 +2,17 @@
 
 // Variables use throughout your stylesheet
 
+// Breakpoints
 $breakpoint-large: 1200px;
 $breakpoint-medium: 960px;
 $breakpoint-small: 478px;
 
-
+// Fonts
 $font-body: helvetica-neue, helvetica, sans-serif;
 $font-heading: font-body;
+
+// Colours
+
+$blue: rgb(3, 118, 156);
+
+$footer-bg-color: #333333;

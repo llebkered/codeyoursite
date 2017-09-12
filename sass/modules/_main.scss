@@ -1,11 +1,44 @@
 .main {
     background-color: white;
 
-    &-bottom {
+    &-top {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        padding-bottom: 2em;
     }
+
+    &-middle{
+        padding-bottom: 2em;
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        
+
+    }
+
+    &-bottom {
+        padding-bottom: 2em;
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          
+        }
+
+    }
+
+    &-icon{
+        color: lightgrey;
+        font-size: 5em;
+        text-align: center;
+    }
+}
+
+.half, .third {
+    width: 100%;
+   
 }
 
 @media (min-width: $breakpoint-small) {
@@ -14,5 +47,10 @@
     }
     .half {
         width: 49%;
+        
+    }
+    .third {
+        width: 32%;
+       
     }
 }

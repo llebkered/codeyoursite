@@ -421,22 +421,47 @@ th {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 960px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.button-blue {
+  background-color: #03769c;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: #02506a;
 }
 
 .page {
   background-color: gray;
-  background-image: url("img/bg-body.jpg");
+  background-image: url("../img/bg-body.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
 }
 
 .topnav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: rgba(64, 64, 64, 0.7);
 }
 
@@ -494,10 +519,79 @@ th {
   background-color: white;
 }
 
+.main-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 2em;
+}
+
+.main-middle {
+  padding-bottom: 2em;
+}
+
+.main-middle .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-bottom {
+  padding-bottom: 2em;
+}
+
+.main-bottom .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-icon {
+  color: lightgrey;
+  font-size: 5em;
+  text-align: center;
+}
+
+.half, .third {
+  width: 100%;
+}
+
+@media (min-width: 478px) {
+  .half {
+    width: 49%;
+  }
+  .third {
+    width: 32%;
+  }
+}
+
 .footer {
+  border: 1px solid #333333;
   background-color: #333333;
   color: white;
   text-align: center;
+}
+
+.footer a {
+  color: white;
+  font-size: 3em;
 }
 
 @media print {

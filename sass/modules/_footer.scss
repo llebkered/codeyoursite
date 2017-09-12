@@ -1,5 +1,10 @@
 .footer {
-    background-color: #333333;
+    border: 1px solid $footer-bg-color;
+    background-color: $footer-bg-color;
     color: white;
     text-align: center;
+
+    a {color: white;
+    font-size: 3em;
+    }
 }
