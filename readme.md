@@ -2,7 +2,7 @@
 
 This repository contains the files used for a __Code Your Own Website__ workshop
 
-V 0.0.2
+
 
 ## Getting Started
 
